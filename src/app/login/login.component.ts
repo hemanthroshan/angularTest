@@ -18,13 +18,16 @@ export class LoginComponent {
   }
 
   loginForm(){
-    let url;
-    // this.http.post(url,JSON.stringify({Details:this.logForm})).subscribe((res) => {
-    //   if(res){
-    //     console.log("Login Successful")
-    //   }
-    //   else
-    //     console.log("Login Failed!");
-    // })
+    if(!this.logForm['invalid'])
+    {
+      let url;
+      // this.http.post(url,JSON.stringify({Details:this.logForm})).subscribe((res) => {
+      //   if(res){
+      //     console.log("Login Successful")
+      //   }
+      //   else
+      //     console.log("Login Failed!");
+      // })
+    }
   }
 }
